@@ -1,0 +1,50 @@
+﻿@model Brand
+
+<div class="Container">
+	<div class="card">
+		<div class="card-header text-uppercase text-center">
+			Brand Details
+		</div>
+		<div class="card-body">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-4">
+							<p clss="card-text text-uppercase"><strong>Id</strong></p>
+						</div>
+						<div class="col-md-8">
+							<p class="card-text">@Model.Id</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p clss="card-text text-uppercase"><strong>Brand Name</strong></p>
+						</div>
+						<div class="col-md-8">
+							<p class="card-text">@Model.Name</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p clss="card-text text-uppercase"><strong>Established Year</strong></p>
+						</div>
+						<div class="col-md-8">
+							<p class="card-text">@Model.EstablishedYear</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<img src=@Model.BrandLogo width="100"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8">
+					<a asp-controller="Brand" asp-action="Index" class="btn btn-danger">
+						Back
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
