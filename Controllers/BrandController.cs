@@ -63,7 +63,7 @@ namespace project_mvc.Controllers
                 _dbContext.Brand.Add(brand);
                 _dbContext.SaveChanges();
 
-                TempData["success"] = "Record created succesfully";
+                TempData["success"] = "Record created successfully";
                 return RedirectToAction(nameof(Index));
             }
 			return View();
